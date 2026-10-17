@@ -241,7 +241,7 @@ a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule);}
 <dt>작업내용</dt>
 <dd>메시지 처리를 6단계로 나눠 커스텀 지표를 심고, 지연이 Broker·Outbound 구간에 몰린 원인을 SimpleBroker의 전역 ReadWriteLock 경합으로 특정.<br>SUBSCRIBE를 인터셉터에서 선처리해 내장 브로커를 우회하고 자체 구독 레지스트리로 대체 <br>동시에 불필요한 FOR UPDATE를 제거하고 스레드 풀을 역할별로 분리</dd>
 <dt>성과</dt>
-<dd>메시지 왕복 p95 49.9초 → 3.46초(94%↓), STOMP 연결 p95 40.85초 → 855ms(98%↓), 수신 확정률 18% → 54%</dd></dl>
+<dd>메시지 왕복 p95 49.9초 → 3.46초(93%↓), STOMP 연결 p95 40.85초 → 855ms(98%↓), 수신 확정률 18% → 54%</dd></dl>
 </div></div>
 <div class="unit">
   
